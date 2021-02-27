@@ -2,7 +2,10 @@ package com.bolsadeideas.spring.webflux.app.models.documents;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.format.annotation.DateTimeFormat;
 
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 @Document(collection = "productos")
@@ -11,9 +14,16 @@ public class Producto {
     @Id
     private String id;
 
+    @NotEmpty
     private String nombre;
 
+    @NotNull
     private Double precio;
+
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date createAt;
+
+    private Categoria categoria;
 
     public Producto() {
     }
@@ -23,9 +33,10 @@ public class Producto {
         this.precio = precio;
     }
 
-    private Date createAt;
-
-
+    public Producto(String nombre, Double precio, Categoria category) {
+        this(nombre, precio);
+        this.categoria = category;
+    }
 
     public String getId() {
         return id;
@@ -57,5 +68,13 @@ public class Producto {
 
     public void setCreateAt(Date createAt) {
         this.createAt = createAt;
+    }
+
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
     }
 }

@@ -5,8 +5,11 @@
     <title th:text="${titulo}">Insert title here</title>
 </head>
 <body>
-<h1 th:text="${titulo}"></h1>
+<div th:if="${param.error != null}" th:text="${param.error}"></div>
+<div th:if="${param.success != null}" th:text="${param.success}"></div>
 
+<h1 th:text="${titulo}"></h1>
+<a th:href="@{/form}">crear +</a>
 <!-- table>(thead>tr>th*4)+tbody>tr>td*4 -->
 <table>
     <thead>
@@ -15,6 +18,8 @@
         <th>nombre</th>
         <th>precio</th>
         <th>fecha</th>
+        <th>editar</th>
+        <th>eliminar</th>
     </tr>
     </thead>
     <tbody>
@@ -23,6 +28,8 @@
         <td th:text="${producto.nombre}"></td>
         <td th:text="${producto.precio}"></td>
         <td th:text="${producto.createAt}"></td>
+        <td><a th:href="@{/form/} + ${producto.id}">editar</a></td>
+        <td><a th:href="@{/eliminar/} + ${producto.id}" onclick="return confirm('Esta seguro que desea eliminar el producto');">eliminar</a></td>
     </tr>
     </tbody>
 </table>
