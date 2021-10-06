@@ -1,0 +1,40 @@
+Temas de parcial estadistica
+
+--// Regresion lineal y linea de tendencia \\--
+https://www.youtube.com/watch?v=yJqc9_ldgz4 -> Ejemplo
+
+http://www.alcula.com/calculators/statistics/linear-regression/#gsc.tab=0
+https://calculadorasonline.com/calculadora-de-regresion-lineal-simple/
+
+
+--// Correlacion lineal \\--
+https://www.youtube.com/watch?v=fNeXC8d5En8 -> Ejemplo
+
+
+http://www.gyplan.com.br/es/correlation_es.html
+http://www.alcula.com/calculators/statistics/correlation-coefficient/
+
+
+
+--// Probabilidades \\--
+https://www.youtube.com/watch?v=ceLx-7Fne4Q -> Ejemplo
+https://www.youtube.com/watch?v=0lxZMaoeUno -> Ejemplo
+https://www.youtube.com/watch?v=0lxZMaoeUno -> EJemplo
+
+https://www.easycalculation.com/es/statistics/probability.php
+https://calculator-online.net/es/probability-calculator/ -> muy bueno
+
+--// Problemas de bayes \\--
+https://www.youtube.com/watch?v=Fi6G48j0IZ4 -> Ejemplo
+https://www.youtube.com/watch?v=CP4ToX5Tyvw -> Ejemplo completo
+
+
+https://calculadorasonline.com/calculadora-de-teorema-de-bayes-diagrama-de-arbol-de-probabilidad/
+https://www.ugr.es/~jsalinas/bayes.htm
+https://stattrek.com/online-calculator/bayes-rule-calculator.aspx
+
+
+--// Permutacion y combinacion \\--
+https://www.youtube.com/watch?v=DhOeAPRXGxM -> Ejemplo
+
+
